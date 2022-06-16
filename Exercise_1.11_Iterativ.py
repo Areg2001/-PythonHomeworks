@@ -1,7 +1,7 @@
 
 def f(n):
 
-    if(n in (1, 2, 3)):
+    if(n < 3):
         return n
 
     first,second,third,nextItem,counter = 1, 2, 3, 0 , 1
