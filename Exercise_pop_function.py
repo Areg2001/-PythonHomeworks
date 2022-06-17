@@ -1,20 +1,17 @@
-lst = [1, 3, 9, 87, 4, 5, 12]
-def pop_(i):
-    value = 0
-    if i == None:
-        del lst[len(lst) - 1]
-    else:
-        value = lst[i]
-        del lst[i]
-        return value
+lst = [3,4,5,6]
+
+def pop_(data, index=None):
+
+    if index == None:
+        tmp = data[-1]
+        del data[-1]
+        return tmp
+
+    tmp = data[index]
+    del data[index]
+    return tmp
+
+print(pop_(lst, 2)) 
+print(lst)     
         
 
-print(pop_(5))
-print(lst)
-      
-
-
-    
-        
-        
-    
